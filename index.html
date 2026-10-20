@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Você decide o futuro da IA</title>
+</head>
+<body>
+    <main class="caixa-principal" aria-live="polite">
+        <header class="cabecalho">
+            <p class="rotulo">Uma história ramificada</p>
+            <h1>Você decide o futuro da IA</h1>
+        </header>
+
+        <div class="progresso" role="progressbar" aria-label="Progresso da história" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0">
+            <span class="passo" data-passo="0"></span>
+            <span class="passo" data-passo="1"></span>
+            <span class="passo" data-passo="2"></span>
+            <span class="passo" data-passo="3"></span>
+            <span class="passo" data-passo="4"></span>
+        </div>
+
+        <section class="tela tela-pergunta">
+            <p class="caixa-perguntas"></p>
+            <div class="caixa-alternativas"></div>
+        </section>
+
+        <section class="tela tela-resultado" hidden>
+            <p class="marca-tempo">Transmissão recebida — 2049</p>
+            <p class="texto-resultado"></p>
+            <button class="botao-reiniciar" type="button">Recomeçar a história</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
